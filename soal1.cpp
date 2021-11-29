@@ -3,20 +3,20 @@ using namespace std;
 
 int main()
 {
-    int i, j, N;
+    int i, j, angka;
     char ngulang;
 
     do{
-    cout<<"Enter N: ";
-    cin>>N;
+    cout<<"Masukan Angka: ";
+    cin>>angka;
     
-    if (N % 2 == 1)
+    if (angka % 2 == 1)
     {
-       for(i=1; i<=N; i++) // loop luar
+       for(i=1; i<=angka; i++) // loop luar
     {
-        for(j=1; j<=N; j++) // loop dalam
+        for(j=1; j<=angka; j++) // loop dalam
         {
-            if(i==(N/2)+1 || j==(N/2)+1){
+            if(i==(angka/2)+1 || j==(angka/2)+1){
             cout << "*"; // symbol x
             }
             else{
@@ -26,12 +26,14 @@ int main()
         cout << "\n";   
     }
     } else {
-        cout << "masukan angka ganjil";
+        cout << "Anda memasukkan jumlah Genap. Masukkan hanya jumlah Ganjil";
     }
-    cout<<"\napakah ingin mengulang lagi?";
+    cout<<"\napakah ingin mengulang lagi? (y/n)";
     cin >> ngulang;
     }
     while (ngulang == 'y');
-    
+        if (ngulang == 'n') {
+            cout << "terimakasih telah menggunakan program ini";
+    }
     return 0;
 }
