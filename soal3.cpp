@@ -17,7 +17,7 @@ int main()
     } else {
         cout << "\nangka negatif";
     }
-    // 0 and 1 bukan angka prima
+    // 0, 1 dan angka negatif bukan angka prima
     if (angka == 0 || angka == 1 || angka < 0) {
         prima = false;
     }
@@ -33,7 +33,6 @@ int main()
         cout << "\n" << angka << " adalah angka prima";
     else
         cout << "\n" <<  angka << " bukan angka prima";
-
 
     return 0;
 }
