@@ -25,7 +25,7 @@ int main()
     default:
     cout << "masukan angka 1-3";
     }
-    cout<<"\napakah ingin mengulang lagi? (y/n)";
+    cout<<"\napakah ingin mengulang lagi? (y/n)\n";
     cin >> ngulang;
     }
     while (ngulang == 'y');
