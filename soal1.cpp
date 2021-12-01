@@ -7,12 +7,12 @@ int main()
     char ngulang;
 
     do{
-    cout<<"Masukan Angka: ";
+    cout<<"Jumlah Baris? ";
     cin>>angka;
-    
     if (angka % 2 == 1)
-    {
-       for(i=1; i<=angka; i++) // loop luar
+    {   
+        cout << "bintang(" << angka << "):\n";
+        for(i=1; i<=angka; i++) // loop luar
     {
         for(j=1; j<=angka; j++) // loop dalam
         {
@@ -28,7 +28,7 @@ int main()
     } else {
         cout << "Anda memasukkan jumlah Genap. Masukkan hanya jumlah Ganjil";
     }
-    cout<<"\napakah ingin mengulang lagi? (y/n)";
+    cout<<"\nApakah anda ingin mengulang Program (Y/N):";
     cin >> ngulang;
     }
     while (ngulang == 'y');
