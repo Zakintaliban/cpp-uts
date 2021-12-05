@@ -1,10 +1,13 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
 {
-    int angka, i;
+int angka, i;
+char ngulang;
     bool prima = true;
+    do {
     cout << "masukan angka:\n";
     cin >> angka;
     if (angka % 2 == 0){
@@ -33,6 +36,12 @@ int main()
         cout << "\n" << angka << " adalah angka prima";
     else
         cout << "\n" <<  angka << " bukan angka prima";
-
+    cout<<"\napakah ingin mengulang lagi? (y/n)\n";
+    cin >> ngulang;
+    }
+    while (ngulang == 'y');
+        if (ngulang == 'n') {
+            cout << "Terima kasih telah menggunakan program ini";
+    }
     return 0;
 }
